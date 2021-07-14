@@ -24,7 +24,8 @@ body{
      
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
+    padding-left: 50px;
+    
 
 }
 .container{
@@ -34,32 +35,31 @@ body{
 
 .highlight {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     padding: 100px;
     font-size: 20px;
     color: black;
     margin-top: 165px;
-    margin-left: 182px;
     margin-bottom: 217px;
-    padding: 5px 10px;
+
+    
 
     
 }
 .width img{
     margin-top: 165px;
     margin-right: 165px;
-    width: 567px;
-height: 427px;
-left: 717px;
-top: 2889px;
+    width: 100%;
+
 }
 
 
 .half-width img  {
 
-    height: 438px;
-    width: 515px;
+    height: 300px;
+    width: 300px;
 }
 
 button:hover{
@@ -125,35 +125,14 @@ h1{
      background-color: yellowgreen;
      box-shadow: 0 8px 100px 0 ;
      height: 100%;
+     width: 70%;
      padding: 10px 10px;
      margin-top: 20px;
 
      
  }
-  
-/* media quarry */
-@media only screen and (max-width:688px) {
-   
-    .players {
-        grid-template-columns: repeat(1, 1fr);
-       
-    }
-    .flexible-container{
-        
-        flex-direction: column;
 
-    }
-    .highlight{
-        flex-direction: column;
-
-    }
-    
- 
-      
-
-   
-}
-/* footer */
+ /* footer */
 
 footer {
 
@@ -242,3 +221,32 @@ footer {
     margin-bottom: 64px;
  
  }
+
+  
+/* media quarry */
+@media only screen and (max-width:688px) {
+   
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .flexible-container{
+        
+        flex-direction: column;
+
+    }
+    .highlight{
+        flex-direction: column;
+
+    }
+    footer{
+        flex-direction: column;
+
+    }
+    footer img{
+        width: 250px;
+        
+    }
+
+
+}
